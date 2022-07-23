@@ -30,7 +30,7 @@ body::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(to top, #fff 50%, rgb(255, 255, 255, 0.0));
+    background-image: linear-gradient(to top, #fff 50%, rgb(255, 255, 255, 0.3));
 }
 /* End Global Rules */
 /* Start Header */
