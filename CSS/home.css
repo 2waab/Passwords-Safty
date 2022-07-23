@@ -1,0 +1,137 @@
+/* Start Global Rules */
+:root {
+	--main-color: #0075ff;
+	--text-color: #000;
+	--backgound-color: #fff;
+	--main-transition: 1s;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+	font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+}
+/* End Global Rules */
+/* Start Header */
+.content {
+    width: 500px;
+}
+.content .image {
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+}
+.content .image  img{
+    width: 150px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.content .image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-color);
+    opacity: .5;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+    animation-name: up-and-down;
+    animation-duration: var(--main-transition);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.content .image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-color);
+    opacity: .2;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: -2;
+    animation-name: up-and-down;
+    animation-duration: var(--main-transition);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.content .text {
+    width: 100%;
+    text-align: center;
+}
+.content h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.content .but {
+    width: 80%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content .but button {
+    border: none;
+    border-radius: 999999px;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.content .but button.btn-2 {
+    width: 200px;
+    background-color: var(--backgound-color);
+    color: var(--text-color);
+    border: 3px solid var(--text-color);
+}
+.content .but button.btn-1 {
+    background-color: var(--text-color);
+    color: var(--backgound-color);
+}
+@media (max-width: 767px) {
+    .content {
+        width: 300px;
+    }
+    .content .image {
+        margin-bottom: 50px;
+    }
+    .content h2 {
+        font-size: 40px;
+    }
+    .content .but {
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-between;
+    }
+    .content .but button.btn-1 {
+        width: 200px;
+    }
+}
+/* End Header */
+/* Start Animation */
+@keyframes up-and-down {
+    to {
+        width: 100px;
+        height: 100px;
+    }
+}
+/* End Animation */
