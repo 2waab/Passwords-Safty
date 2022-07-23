@@ -3,7 +3,7 @@
 	--main-color: #0075ff;
 	--text-color: #000;
 	--backgound-color: #fff;
-	--main-transition: 1s;
+	--main-transition: 2s;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -28,15 +28,17 @@ body {
 }
 .content .image {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     position: relative;
 }
-.content .image  img{
-    width: 150px;
-    position: relative;
-    top: 0;
+.content .image  i{
+    display: block;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    color: var(--main-color);
 
 }
 .content .image::after {
@@ -46,15 +48,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--main-color);
-    opacity: .5;
-    width: 200px;
-    height: 200px;
+    opacity: 0.5;
+    width: 0px;
+    height: 0px;
     border-radius: 50%;
     z-index: -1;
-    animation-name: up-and-down;
+    animation-name: up-and-down-one;
     animation-duration: var(--main-transition);
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 .content .image::before {
     content: "";
@@ -63,15 +64,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--main-color);
-    opacity: .2;
-    width: 250px;
-    height: 250px;
+    opacity: 0.2;
+    width: 0px;
+    height: 0px;
     border-radius: 50%;
     z-index: -2;
-    animation-name: up-and-down;
+    animation-name: up-and-down-two;
     animation-duration: var(--main-transition);
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 .content .text {
     width: 100%;
@@ -111,9 +111,6 @@ body {
     .content {
         width: 300px;
     }
-    .content .image {
-        margin-bottom: 50px;
-    }
     .content h2 {
         font-size: 40px;
     }
@@ -128,10 +125,18 @@ body {
 }
 /* End Header */
 /* Start Animation */
-@keyframes up-and-down {
+@keyframes up-and-down-one {
     to {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+    }
+}
+@keyframes up-and-down-two {
+    to {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
     }
 }
 /* End Animation */
