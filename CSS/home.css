@@ -30,7 +30,7 @@ body::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(to top, #fff 50%, rgb(255, 255, 255, 0.3));
+    background-image: linear-gradient(to top, #fff 50%, rgb(255, 255, 255, 0.5));
 }
 /* End Global Rules */
 /* Start Header */
@@ -61,7 +61,7 @@ body::after {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--main-color);
-    opacity: 0.5;
+    opacity: 0.8;
     width: 0px;
     height: 0px;
     border-radius: 50%;
@@ -77,7 +77,7 @@ body::after {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--main-color);
-    opacity: 0.2;
+    opacity: 0.5;
     width: 0px;
     height: 0px;
     border-radius: 50%;
