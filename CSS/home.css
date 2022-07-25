@@ -13,6 +13,9 @@
 html {
 	scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+}
 body {
     height: 100vh;
 	font-family: 'Poppins', sans-serif;
@@ -30,7 +33,7 @@ body::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(to top, #fff 50%, rgb(255, 255, 255, 0.5));
+    background-image: linear-gradient(to top, #fff 40%, rgb(255, 255, 255, 0.6));
 }
 /* End Global Rules */
 /* Start Header */
@@ -110,15 +113,21 @@ body::after {
     font-size: 22px;
     cursor: pointer;
 }
+.content .but button.btn-1 {
+    background-color: var(--text-color);
+    color: var(--backgound-color);
+}
+.content .but button.btn-1 a {
+    color: var(--backgound-color);
+}
 .content .but button.btn-2 {
     width: 200px;
     background-color: var(--backgound-color);
     color: var(--text-color);
     border: 3px solid var(--text-color);
 }
-.content .but button.btn-1 {
-    background-color: var(--text-color);
-    color: var(--backgound-color);
+.content .but button.btn-2 a {
+    color: var(--text-color);
 }
 @media (max-width: 767px) {
     .content {
