@@ -28,6 +28,7 @@ body {
 /* Start Sing in */
 .box {
     width: 500px;
+    padding: 0 10px;
     position: relative;
 }
 
