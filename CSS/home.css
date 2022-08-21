@@ -1,6 +1,6 @@
 /* Start Global Rules */
 :root {
-	--main-color: #C21010;
+	--main-color: #c21010;
 	--text-color: #000;
 	--backgound-color: #fff;
 	--main-transition: 2s;
@@ -18,7 +18,7 @@ a {
 }
 body {
     height: 100vh;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Cairo', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,12 +94,12 @@ body::after {
     text-align: center;
 }
 .content h2 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     color: var(--text-color);
 }
 .content .but {
-    width: 80%;
+    width: 100%;
     margin: 30px auto 0;
     display: flex;
     align-items: center;
@@ -108,9 +108,9 @@ body::after {
 .content .but button {
     border: none;
     border-radius: 999999px;
-    width: 150px;
+    width: 250px;
     height: 50px;
-    font-size: 22px;
+    font-size: 18px;
     cursor: pointer;
 }
 .content .but button.btn-1 {
@@ -134,7 +134,7 @@ body::after {
         width: 300px;
     }
     .content h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .content .but {
         flex-direction: column;
