@@ -1,5 +1,5 @@
 /* Start Global Rules */
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
 	--main-color: #c21010;
     --main-color-alt: #8b0b0b;
@@ -20,7 +20,7 @@ a {
 }
 body {
     height: 100vh;
-    font-family: 'Almarai', sans-serif;
+    font-family: 'Cairo', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
